@@ -23,6 +23,11 @@ class _TakephotoState extends State<Takephoto> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Center(child: Text("Take a Photo")),
+        backgroundColor: Color.fromARGB(255, 75, 208, 241),
+      ),
+      backgroundColor: Color.fromARGB(255, 75, 208, 241),
       body: Center(
         child: _image == null ? Text("No image Selected"): Image.file(_image!),
       ),
