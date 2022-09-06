@@ -27,9 +27,9 @@ class _TakephotoState extends State<Takephoto> {
         child: _image == null ? Text("No image Selected"): Image.file(_image!),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.transparent,
         onPressed: getImage ,
-        child: Icon(Icons.camera_alt),
+        child: Image.asset("assets/images/dslr-camera.png"),
       ),
     );
   }
